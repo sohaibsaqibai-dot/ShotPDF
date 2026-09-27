@@ -1,0 +1,29 @@
+# ShotPDF
+
+> ShotPDF is a free Chrome extension that takes full page screenshots of websites and saves them as images or PDFs. It scrolls the page automatically, stitches every section into one image, lets the user crop, annotate and blur private details, and exports PNG, JPG, JPEG, WEBP, TIFF, BMP or PDF (A4, Letter, or one long page with no page breaks). All processing happens on the user's device: nothing is uploaded, there is no account, and there is no analytics.
+
+Key facts:
+- Name: ShotPDF: Full Page Screenshot & Webpage to PDF
+- Type: Chrome extension (Manifest V3), works in Google Chrome and Chromium-based browsers
+- Price: free, no watermark, no sign-up
+- Version: 1.1.0 (September 2026)
+- Install: https://chromewebstore.google.com/detail/bldkedmkkjiieifmmladbgejdfaajpmh
+- Capture modes: full page (auto-scroll and stitch), visible area, selected area
+- Editing: crop, pen, arrow, box, highlight, text, blur/pixelate, undo/redo
+- Output: download or copy to clipboard; file names from site name, page title, date and time
+- Shortcuts: Alt+Shift+F full page, Alt+Shift+V visible area, Alt+Shift+S select area (customizable); right-click menu; 3 or 5 second capture delay
+- Privacy: no remote code, no servers, no tracking; permissions are activeTab, scripting, downloads, storage, contextMenus
+- Limitations: Chrome does not allow extensions to capture chrome:// pages, the New Tab page or the Chrome Web Store; content inside separately scrolling panels is not stitched
+- Support: saqibsohaib48@gmail.com
+
+## Pages
+
+- [Home](https://YOUR-USERNAME.github.io/): features, how it works, FAQ
+- [Support](https://YOUR-USERNAME.github.io/support.html): fixes for common problems, shortcuts, contact
+- [Privacy policy](https://YOUR-USERNAME.github.io/privacy.html): what data is handled and why
+
+## Common questions
+
+- How to take a full page screenshot in Chrome: install ShotPDF, open the page, click the icon and choose Full page (or press Alt+Shift+F).
+- How to save a webpage as one PDF without page breaks: capture with ShotPDF, choose PDF, set PDF pages to "One page".
+- How to hide private information in a screenshot: use the Blur tool in the ShotPDF preview before saving.

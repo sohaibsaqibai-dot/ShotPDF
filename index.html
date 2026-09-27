@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShotPDF: Full Page Screenshot &amp; Save Webpage as PDF in Chrome</title>
+<meta name="description" content="Free Chrome extension to take a full page screenshot of any website, blur private details, and save it as PNG, JPG or PDF, including one long PDF page. Nothing is uploaded.">
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#FF5A3C">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ShotPDF">
+<meta property="og:title" content="ShotPDF: Full Page Screenshot & Webpage to PDF">
+<meta property="og:description" content="Capture any web page from top to bottom, blur private details, and save it as an image or PDF. Free, private, no account.">
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ShotPDF capturing a long web page and saving it as a PDF">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ShotPDF: Full Page Screenshot & Webpage to PDF">
+<meta name="twitter:description" content="Capture any web page from top to bottom and save it as an image or PDF. Free, private, no account.">
+<meta name="twitter:image" content="https://YOUR-USERNAME.github.io/assets/img/og-image.png">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://YOUR-USERNAME.github.io/#website",
+      "url": "https://YOUR-USERNAME.github.io/",
+      "name": "ShotPDF",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://YOUR-USERNAME.github.io/#org",
+      "name": "ShotPDF",
+      "url": "https://YOUR-USERNAME.github.io/",
+      "logo": "https://YOUR-USERNAME.github.io/assets/img/icon-512.png",
+      "email": "saqibsohaib48@gmail.com",
+      "sameAs": ["https://chromewebstore.google.com/detail/bldkedmkkjiieifmmladbgejdfaajpmh"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://YOUR-USERNAME.github.io/#app",
+      "name": "ShotPDF: Full Page Screenshot & Webpage to PDF",
+      "alternateName": "ShotPDF",
+      "description": "A Chrome extension that takes full page, visible area or selected area screenshots of any website, lets you crop, annotate and blur private details, and saves the result as PNG, JPG, WEBP, TIFF, BMP or PDF. All processing happens on the user's device.",
+      "applicationCategory": "BrowserApplication",
+      "applicationSubCategory": "Screenshot tool",
+      "operatingSystem": "Google Chrome, Chromium-based browsers",
+      "softwareVersion": "1.1.0",
+      "url": "https://YOUR-USERNAME.github.io/",
+      "downloadUrl": "https://chromewebstore.google.com/detail/bldkedmkkjiieifmmladbgejdfaajpmh",
+      "installUrl": "https://chromewebstore.google.com/detail/bldkedmkkjiieifmmladbgejdfaajpmh",
+      "image": "https://YOUR-USERNAME.github.io/assets/img/og-image.png",
+      "screenshot": "https://YOUR-USERNAME.github.io/assets/img/editor.webp",
+      "featureList": [
+        "Full page screenshot with automatic scrolling and stitching",
+        "Visible area and selected area capture",
+        "Crop, pen, arrow, box, highlight and text annotations",
+        "Blur private details before sharing",
+        "Save as PNG, JPG, JPEG, WEBP, TIFF, BMP or PDF",
+        "PDF on A4 or Letter pages, or one long page with no page breaks",
+        "Copy to clipboard",
+        "Keyboard shortcuts, right-click menu and capture delay",
+        "Processed locally with no uploads and no account"
+      ],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@id": "https://YOUR-USERNAME.github.io/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How do I take a full page screenshot in Chrome?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Install ShotPDF, open the page you want, then click the ShotPDF icon and choose Full page, or press Alt+Shift+F. ShotPDF scrolls the page, stitches every section into one image, and opens a preview where you can edit and save it." } },
+        { "@type": "Question", "name": "Can I save a whole webpage as one PDF page without it being cut off?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. After capturing, choose PDF and set PDF pages to One page. The entire page is saved on a single long PDF page with no page breaks. You can also choose A4 or Letter pages." } },
+        { "@type": "Question", "name": "Does ShotPDF upload my screenshots?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Capturing, stitching, editing and exporting all happen inside your browser. ShotPDF has no servers, no account and no analytics." } },
+        { "@type": "Question", "name": "How do I blur private information in a screenshot?",
+          "acceptedAnswer": { "@type": "Answer", "text": "In the ShotPDF preview, pick the Blur tool (or press B) and drag over the email, name or number you want to hide. The area is pixelated in the file you save or copy." } },
+        { "@type": "Question", "name": "Is ShotPDF free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. ShotPDF is free, with no watermark and no sign-up." } },
+        { "@type": "Question", "name": "Why can't ShotPDF capture some pages?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Chrome does not let any extension capture its own protected pages, such as chrome:// settings pages, the New Tab page and the Chrome Web Store. Open a regular website and try again." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="./" aria-label="ShotPDF home"><img src="assets/img/favicon.svg" alt="" width="34" height="34">ShotPDF</a>
+    <nav aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <a class="btn btn-main" href="https://chromewebstore.google.com/detail/bldkedmkkjiieifmmladbgejdfaajpmh" rel="noopener">Add to Chrome</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Screenshot the whole page, not just what fits on screen.</h1>
+        <p class="lede">ShotPDF scrolls any website for you, stitches it into one clean image, and saves it as a PNG, JPG or PDF. You can blur private details first. Everything happens in your browser.</p>
+        <div class="hero-cta">
+          <a class="btn btn-main" href="https://chromewebstore.google.com/detail/bldkedmkkjiieifmmladbgejdfaajpmh" rel="noopener"><span class="chip" aria-hidden="true"></span>Add to Chrome, it's free</a>
+          <span class="hero-note">No account, no watermark, nothing uploaded.</span>
+        </div>
+      </div>
+      <div class="scroll-demo" aria-hidden="true">
+        <div class="page"><img src="assets/img/fullpage.webp" alt="" width="250" height="607"></div>
+        <div class="finder"><i></i><i></i><i></i><i></i></div>
+        <div class="result"><b>lisbon-in-3-days.pdf</b><span>Whole page, 1 PDF page</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>From long page to file in three steps</h2>
+      </div>
+      <ol class="steps" style="list-style:none;margin:0;padding:0">
+        <li class="step">
+          <div class="n" aria-hidden="true">1</div>
+          <h3>Capture</h3>
+          <p>Click the icon and choose Full page, Visible area or Select area. Or press Alt+Shift+F.</p>
+        </li>
+        <li class="step">
+          <div class="n" aria-hidden="true">2</div>
+          <h3>Edit</h3>
+          <p>Crop, add arrows, boxes, highlights and text, and blur anything private.</p>
+        </li>
+        <li class="step">
+          <div class="n" aria-hidden="true">3</div>
+          <h3>Save or copy</h3>
+          <p>Download as an image or PDF, or copy it straight into chat, email or a document.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="features" style="padding-top:0">
+    <div class="wrap feature">
+      <div>
+        <h2>Blur what shouldn't be shared</h2>
+        <p class="lede" style="margin-top:18px">Screenshots often carry emails, names and order numbers. The built-in editor hides them before the file ever exists.</p>
+        <ul>
+          <li><strong>Blur</strong><span>Pixelate emails, names and card numbers.</span></li>
+          <li><strong>Crop</strong><span>Keep only the part that matters.</span></li>
+          <li><strong>Mark up</strong><span>Arrows, boxes, highlights, pen and text.</span></li>
+          <li><strong>Undo</strong><span>Step back through every change.</span></li>
+        </ul>
+      </div>
+      <div class="shot"><img src="assets/img/editor.webp" alt="ShotPDF editor with a booking box outlined, the guest email and card number blurred, and an arrow labelled Private info hidden" width="1600" height="901" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap pdf">
+      <figure>
+        <div class="sheets">
+          <img src="assets/img/pdf-a4-2.webp" alt="" width="500" height="706" loading="lazy">
+          <img src="assets/img/pdf-a4-1.webp" alt="First A4 page of a captured article" width="500" height="706" loading="lazy">
+        </div>
+        <figcaption>A4 or Letter pages<span>Ready to print or attach.</span></figcaption>
+      </figure>
+      <figure>
+        <div class="long"><img src="assets/img/fullpage.webp" alt="The same article saved as one long PDF page" width="600" height="1456" loading="lazy"></div>
+        <figcaption>One long page<span>No breaks through images or tables.</span></figcaption>
+      </figure>
+      <div class="pdf-text">
+        <h2>Save a webpage as PDF without it being cut off</h2>
+        <p class="lede" style="margin-top:18px">Pick PDF and choose how the pages are laid out. Or save a picture instead, in the format you need.</p>
+        <div class="formats" aria-label="Supported formats"><span>PDF</span><span>PNG</span><span>JPG</span><span>WEBP</span><span>TIFF</span><span>BMP</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Faster once you know the keys</h2>
+        <p class="lede">Start a capture without opening anything. You can change every shortcut in Chrome's settings.</p>
+      </div>
+      <div class="keys">
+        <div>
+          <div class="keyrow"><kbd>Alt</kbd><kbd>Shift</kbd><kbd>F</kbd></div>
+          <h3>Full page</h3>
+          <p>Scroll and stitch the entire page.</p>
+        </div>
+        <div>
+          <div class="keyrow"><kbd>Alt</kbd><kbd>Shift</kbd><kbd>V</kbd></div>
+          <h3>Visible area</h3>
+          <p>Capture exactly what's on screen.</p>
+        </div>
+        <div>
+          <div class="keyrow"><kbd>Alt</kbd><kbd>Shift</kbd><kbd>S</kbd></div>
+          <h3>Select area</h3>
+          <p>Drag around the part you want.</p>
+        </div>
+      </div>
+      <p class="lede" style="margin-top:44px">Prefer the mouse? Right-click any page to start a capture. Need a dropdown menu in the shot? Set a 3 or 5 second delay, open the menu, and ShotPDF captures it.</p>
+    </div>
+  </section>
+
+  <section class="section band" id="privacy">
+    <div class="wrap">
+      <h2>Your captures never leave your browser</h2>
+      <p class="lede" style="margin-top:18px">ShotPDF has no servers to send anything to. Scrolling, stitching, editing and saving all run on your own computer.</p>
+      <div class="facts">
+        <div class="fact"><b>Nothing uploaded</b><span>Images and PDFs are created locally.</span></div>
+        <div class="fact"><b>No account</b><span>Install it and start capturing.</span></div>
+        <div class="fact"><b>No tracking</b><span>No analytics and no ads.</span></div>
+        <div class="fact"><b>Light</b><span>Under 0.5 MB, with minimal permissions.</span></div>
+      </div>
+      <p style="margin-top:44px">Read the full <a href="privacy.html">privacy policy</a>.</p>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head"><h2>Questions people ask</h2></div>
+      <div class="faq">
+        <details open>
+          <summary>How do I take a full page screenshot in Chrome?</summary>
+          <p>Install ShotPDF, open the page you want, then click the ShotPDF icon and choose Full page, or press Alt+Shift+F. ShotPDF scrolls the page, stitches every section into one image, and opens a preview where you can edit and save it.</p>
+        </details>
+        <details>
+          <summary>Can I save a whole webpage as one PDF page without it being cut off?</summary>
+          <p>Yes. After capturing, choose PDF and set PDF pages to One page. The entire page is saved on a single long PDF page with no page breaks. You can also choose A4 or Letter pages.</p>
+        </details>
+        <details>
+          <summary>Does ShotPDF upload my screenshots?</summary>
+          <p>No. Capturing, stitching, editing and exporting all happen inside your browser. ShotPDF has no servers, no account and no analytics.</p>
+        </details>
+        <details>
+          <summary>How do I blur private information in a screenshot?</summary>
+          <p>In the ShotPDF preview, pick the Blur tool (or press B) and drag over the email, name or number you want to hide. The area is pixelated in the file you save or copy.</p>
+        </details>
+        <details>
+          <summary>Is ShotPDF free?</summary>
+          <p>Yes. ShotPDF is free, with no watermark and no sign-up.</p>
+        </details>
+        <details>
+          <summary>Why can't ShotPDF capture some pages?</summary>
+          <p>Chrome does not let any extension capture its own protected pages, such as chrome:// settings pages, the New Tab page and the Chrome Web Store. Open a regular website and try again. More fixes are on the <a href="support.html">support page</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <div class="box">
+        <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+          <img src="assets/img/icon-192.png" alt="" width="96" height="96">
+          <div>
+            <h2 style="font-size:clamp(30px,3.4vw,42px)">Capture your first full page</h2>
+            <p class="lede" style="margin-top:8px">Free for Chrome. Takes a few seconds to install.</p>
+          </div>
+        </div>
+        <a class="btn btn-main" href="https://chromewebstore.google.com/detail/bldkedmkkjiieifmmladbgejdfaajpmh" rel="noopener"><span class="chip" aria-hidden="true"></span>Add to Chrome</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 ShotPDF</span>
+    <nav aria-label="Footer">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="support.html">Support</a>
+      <a href="https://chromewebstore.google.com/detail/bldkedmkkjiieifmmladbgejdfaajpmh" rel="noopener">Chrome Web Store</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
